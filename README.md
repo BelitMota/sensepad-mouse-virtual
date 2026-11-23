@@ -1,4 +1,4 @@
-# SensePad — Mouse Virtual
+# SensePad - Mouse Virtual
 
 Aplicação desenvolvida em **Flutter** e **Python** que transforma a tela sensível ao toque de um smartphone em um touchpad para controlar o cursor de um computador remotamente.
 
@@ -6,7 +6,17 @@ O projeto utiliza comunicação TCP para conectar o aplicativo mobile ao computa
 
 Desenvolvido como parte de um **Projeto Integrador da Universidade de Sorocaba (Uniso)**, para o curso de Análise e Desenvolvimento de Sistemas, com foco em acessibilidade digital e interação entre dispositivos.
 
-> **Repositório:** [SensePad — Mouse Virtual](https://github.com/BelitMota/sensepad-mouse-virtual)
+---
+
+## Repositórios do Projeto
+
+O SensePad é dividido em dois repositórios, responsáveis por diferentes partes da aplicação:
+
+- **Mouse Virtual (Flutter + Python):** este repositório contém o aplicativo mobile e a aplicação desktop responsável pelo controle remoto do mouse.
+
+- **Backend API (Node.js + Express + SQLite):** responsável pela autenticação e pelo gerenciamento de usuários.
+
+> **Acesse o repositório da API:** [SensePad - API](https://github.com/Valentina-Klein/SensePadAPI)
 
 ---
 
