@@ -13,7 +13,6 @@ Desenvolvido como parte de um **Projeto Integrador da Universidade de Sorocaba (
 O SensePad é dividido em dois repositórios, responsáveis por diferentes partes da aplicação:
 
 - **Mouse Virtual (Flutter + Python):** este repositório contém o aplicativo mobile e a aplicação desktop responsável pelo controle remoto do mouse.
-
 - **Backend API (Node.js + Express + SQLite):** responsável pela autenticação e pelo gerenciamento de usuários.
 
 > **Acesse o repositório da API:** [SensePad - API](https://github.com/Valentina-Klein/SensePadAPI)
