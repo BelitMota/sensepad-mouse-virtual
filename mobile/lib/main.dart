@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'features/home/screens/home.dart';
+import 'features/welcome/screens/welcome.dart';
 import './shared/theme/app_theme.dart';
 
 void main() {
@@ -15,9 +15,12 @@ class SensePadApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'SensePad',
+      
+      // cores e tema
       theme: AppTheme.lightTheme,       // <-- Tema Claro
       darkTheme: AppTheme.darkTheme,    // <-- Tema Escuro
       themeMode: ThemeMode.system,      // <-- Muda sozinho conforme o celular
+
       home: const HomeScreen(),
     );
   }

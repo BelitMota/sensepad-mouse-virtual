@@ -2,6 +2,11 @@
 import 'package:flutter/material.dart';
 import '../../connection/screens/connect_device_screen.dart';
 
+// imports da autenticação
+import '../../auth/screens/login.dart';
+import '../../auth/screens/cadastro.dart';
+
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -75,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const ConnectDeviceScreen(),
+                        builder: (context) => const LoginScreen(),
                       ),
                     );
                   },
@@ -96,7 +101,7 @@ class HomeScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const ConnectDeviceScreen(),
+                        builder: (context) => const RegisterScreen(),
                       ),
                     );
                   },

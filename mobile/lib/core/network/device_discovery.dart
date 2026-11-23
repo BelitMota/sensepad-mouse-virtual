@@ -1,1 +1,0 @@
-// Busca automática do computador na rede.
