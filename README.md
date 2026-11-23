@@ -102,7 +102,7 @@ Smartphone (Flutter)
 ConnectionManager
         |
         v
-TcpClient
+    TcpClient
         |
         | Comunicação TCP
         | Mensagens JSON
