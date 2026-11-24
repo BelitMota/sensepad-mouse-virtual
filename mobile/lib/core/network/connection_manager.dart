@@ -27,16 +27,13 @@ class ConnectionManager {
   // Em resumo:
   // -> Future indicará uma operação que pode terminar no futuro
   // -> Void indica que a função nao vai retornar um valor
-  Future<void> connect(
-    String ip,
-    int port,
-    String token, // utilização de token
-    // Operação assíncrona, ou seja, n precisa esperar ela terminar, ela executa outras tarefas enquanto executa essa
-    // o async permite que isso ocorra e o await que faz esperar
-  ) async {
-    await _client.connect(ip, port, token);
-  }
-
+    Future<void> connect(
+      String ip,
+      int port,
+    ) async {
+      await _client.connect(ip, port);
+    }
+    
   // ============================================================================================== //
   // Envia os comandos do mouse pra controlar o cursor do computador
   // essa função recebe um objeto com os movimentos

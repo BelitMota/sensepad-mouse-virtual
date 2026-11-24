@@ -14,7 +14,6 @@ class TcpClient {
   Future<void> connect(
     String host,
     int port,
-    String token,
   ) async {
     disconnect();
 
@@ -45,10 +44,10 @@ class TcpClient {
     );
 
     // Envia o token para autenticar o dispositivo.
-    _send({
-      'type': 'auth',
-      'token': token,
-    });
+  //   _send({
+  //     'type': 'auth',
+  //     'token': token,
+  //   });
   }
 
 // ================================================================================================ //
@@ -73,12 +72,12 @@ class TcpClient {
 
 // start_drag: pressiona e mantém o botão esquerdo do mouse pressionado
   void sendStartDrag() {
-    _send({'type': 'mouse_down'});
+    _send({'type': 'start_drag'});
   }
 
 // end_drag: libera o botão esquerdo do mouse que estava pressionado
   void sendEndDrag() {
-    _send({'type': 'mouse_up'});
+    _send({'type': 'end_drag'});
   }
 
 // Clique esquerdo

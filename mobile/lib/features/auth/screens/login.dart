@@ -13,6 +13,7 @@ import '../../../shared/theme/app_theme.dart';
 
 // conexão com a tela de cadastro
 import './cadastro.dart';
+import '../../connection/screens/connect_device_screen.dart';
 
 
 class LoginScreen extends StatefulWidget {
@@ -133,6 +134,13 @@ class _LoginScreenState extends State<LoginScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Login realizado com sucesso!'),
+        ),
+      );
+
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const ConnectDeviceScreen(),
         ),
       );
 

@@ -1,5 +1,5 @@
 name: sensepad
-description: "A new Flutter project."
+description: "Um projeto flutter de um mouse virtual, voltado para a acessibilidade digital"
 publish_to: 'none' 
 version: 1.0.0+1
 
@@ -59,6 +59,10 @@ flutter:
 
 flutter_launcher_icons:
   android: true
-  image_path: "./assets/icon/logo.png"
+  image_path: "./assets/images/Logo.png"
   adaptive_icon_background: "#FFFFFF"
-  adaptive_icon_foreground: "assets/icon/logo.png"
+  adaptive_icon_foreground: "assets/images/Logo.png"
+  weight: 120px
+  height: 120px
+
+  # dart run flutter_launcher_icons

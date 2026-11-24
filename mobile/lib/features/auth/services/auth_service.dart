@@ -31,7 +31,7 @@ class AuthService {
   }) async {
     return await _apiClient.post(
       '/api/auth/login',
-      body: {
+      body: {''
         'email': email,
         'password': password,
       },

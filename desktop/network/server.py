@@ -13,8 +13,8 @@ from mouse.cursor_control import (
     move_cursor,
     left_click,
     right_click,
-    mouse_down,
-    mouse_up
+    start_drag,
+    end_drag
 )
 
 # configurações do servidor
@@ -51,12 +51,12 @@ def process_command(command: dict[str, Any]) -> None:
             print("Botão desconhecido:", button)
 
 
-    elif command_type == "mouse_down":
-        mouse_down()
+    elif command_type == "start_drag":
+        start_drag()
         print("Botão esquerdo pressionado.")
 
-    elif command_type == "mouse_up":
-        mouse_up()
+    elif command_type == "end_drag":
+        end_drag()
         print("Botão esquerdo liberado.")
 
     # Texto do teclado (implementaremos depois)
